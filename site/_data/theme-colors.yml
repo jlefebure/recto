@@ -1,15 +1,15 @@
 - name: primary
-  hex: "#007bff"
+  hex: "#00a7e1"
 - name: secondary
   hex: "#868e96"
 - name: success
-  hex: "#28a745"
+  hex: "#00e08a"
 - name: danger
-  hex: "#dc3545"
+  hex: "#e85a5a"
 - name: warning
-  hex: "#ffc107"
+  hex: "#ffc857"
 - name: info
-  hex: "#17a2b8"
+  hex: "#893b83"
 - name: light
   hex: "#f8f9fa"
 - name: dark

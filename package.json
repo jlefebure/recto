@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap",
-  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-  "version": "4.3.1",
+  "name": "recto",
+  "description": "Another Bootstrap fork.",
+  "version": "4.3.1-beta.0",
   "version_short": "4.3",
   "keywords": [
     "css",
@@ -12,9 +12,10 @@
     "framework",
     "web"
   ],
-  "homepage": "https://getbootstrap.com/",
-  "author": "The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)",
+  "homepage": "https://jlefebure.com/",
+  "author": "The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors) and Jordan Lefébure",
   "contributors": [
+    "Jordan Lefébure",
     "Twitter, Inc."
   ],
   "scripts": {

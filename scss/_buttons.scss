@@ -136,3 +136,12 @@ input[type="button"] {
     width: 100%;
   }
 }
+
+//
+// Button pills
+//
+
+// stylelint-disable property-blacklist
+.btn-pill {
+  border-radius: $btn-pill-border-radius;
+}

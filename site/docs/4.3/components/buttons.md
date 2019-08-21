@@ -45,6 +45,25 @@ In need of a button, but not the hefty background colors they bring? Replace the
 {% endcapture %}
 {% include example.html content=example %}
 
+## Pills buttons
+
+Pills buttons are another kind of buttons.
+
+{% capture example %}
+{% for color in site.data.theme-colors %}
+<button type="button" class="btn btn-pill btn-{{ color.name }}">{{ color.name | capitalize }}</button>{% endfor %}
+{% endcapture %}
+{% include example.html content=example %}
+
+You can also use outlines buttons with it
+
+{% capture example %}
+{% for color in site.data.theme-colors %}
+<button type="button" class="btn btn-pill btn-outline-{{ color.name }}">{{ color.name | capitalize }}</button>{% endfor %}
+{% endcapture %}
+{% include example.html content=example %}
+
+
 ## Sizes
 
 Fancy larger or smaller buttons? Add `.btn-lg` or `.btn-sm` for additional sizes.
@@ -149,6 +168,21 @@ Note that pre-checked buttons require you to manually add the `.active` class to
     <input type="radio" name="options" id="option2"> Radio
   </label>
   <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3"> Radio
+  </label>
+</div>
+{% endcapture %}
+{% include example.html content=example %}
+
+{% capture example %}
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-pill btn-secondary active">
+    <input type="radio" name="options" id="option1" checked> Active
+  </label>
+  <label class="btn btn-pill btn-secondary">
+    <input type="radio" name="options" id="option2"> Radio
+  </label>
+  <label class="btn btn-pill btn-secondary">
     <input type="radio" name="options" id="option3"> Radio
   </label>
 </div>
