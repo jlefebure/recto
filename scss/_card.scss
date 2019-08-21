@@ -13,6 +13,7 @@
   background-clip: border-box;
   border: $card-border-width solid $card-border-color;
   @include border-radius($card-border-radius);
+  @include box-shadow($box-shadow);
 
   > hr {
     margin-right: 0;
@@ -75,7 +76,7 @@
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
   color: $card-cap-color;
   background-color: $card-cap-bg;
-  border-bottom: $card-border-width solid $card-border-color;
+  border-bottom: $card-header-border-width solid $card-border-color;
 
   &:first-child {
     @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
@@ -91,7 +92,7 @@
 .card-footer {
   padding: $card-spacer-y $card-spacer-x;
   background-color: $card-cap-bg;
-  border-top: $card-border-width solid $card-border-color;
+  border-top: $card-footer-border-width solid $card-border-color;
 
   &:last-child {
     @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
@@ -172,10 +173,18 @@
 //
 
 .card-group {
+  display: flex;
+  flex-direction: column;
+  @include border-radius($border-radius);
+  @include box-shadow($box-shadow);
+
+
   // The child selector allows nested `.card` within `.card-group`
   // to display properly.
   > .card {
     margin-bottom: $card-group-margin;
+    @include box-shadow(none);
+
   }
 
   @include media-breakpoint-up(sm) {
