@@ -248,9 +248,9 @@ $border-radius-sm:            .12rem !default;
 
 $rounded-pill:                50rem !default;
 
-$box-shadow-sm:               0 0 .7rem rgba($black, .075) !default;
-$box-shadow:                  0 0 1.7rem rgba($black, .15) !default;
-$box-shadow-lg:               0 0 3.7rem rgba($black, .175) !default;
+$box-shadow-sm:               0 0 64px rgba(183, 192, 215, .5) !default;
+$box-shadow:                  0 0 64px rgba(183, 192, 215, .5) !default;
+$box-shadow-lg:               0 0 64px rgba(183, 192, 215, .5) !default;
 
 $component-active-color:      $white !default;
 $component-active-bg:         theme-color("primary") !default;
