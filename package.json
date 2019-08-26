@@ -1,8 +1,8 @@
 {
-  "name": "bootstrap",
-  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-  "version": "4.4.1",
-  "version_short": "4.4",
+  "name": "recto",
+  "description": "Another Bootstrap fork.",
+  "version": "4.4.1-beta.1",
+  "version_short": "4.3",
   "keywords": [
     "css",
     "sass",
@@ -12,9 +12,10 @@
     "framework",
     "web"
   ],
-  "homepage": "https://getbootstrap.com/",
-  "author": "The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)",
+  "homepage": "https://jlefebure.com/",
+  "author": "The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors) and Jordan Lefébure",
   "contributors": [
+    "Jordan Lefébure",
     "Twitter, Inc."
   ],
   "scripts": {
@@ -22,6 +23,8 @@
     "blc": "blc --exclude-external --filter-level 3 --follow --get --ordered --recursive --host-requests 4 --input http://localhost:3000/",
     "http-server": "http-server --silent -p 3000",
     "bundlesize": "bundlesize",
+    "fonts": "npm-run-all fonts-copy",
+    "fonts-copy": "cross-env-shell shx mkdir -p site/docs/$npm_package_version_short/dist/ && cross-env-shell shx cp -r fonts/ dist && cross-env-shell",
     "check-broken-links": "npm-run-all --parallel --race \"http-server -- _gh_pages/\" blc",
     "css": "npm-run-all css-compile css-prefix css-minify css-copy",
     "css-copy": "cross-env-shell shx mkdir -p site/docs/$npm_package_version_short/dist/ && cross-env-shell shx cp -r dist/css/ site/docs/$npm_package_version_short/dist/",
