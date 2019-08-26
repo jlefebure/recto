@@ -12,6 +12,7 @@
   @include hover() {
     color: color-yiq($hover-background);
     @include gradient-bg($hover-background);
+    @include box-shadow(0 0 .6rem $btn-hover-shadow-width rgba($hover-background, .4));
     border-color: $hover-border;
   }
 
@@ -69,6 +70,7 @@
     color: $color-hover;
     background-color: $active-background;
     border-color: $active-border;
+    @include box-shadow(0 0 .6rem $btn-hover-shadow-width rgba($active-background, .4));
   }
 
   &:focus,
