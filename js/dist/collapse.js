@@ -1,6 +1,6 @@
 /*!
-  * Bootstrap collapse.js v4.3.1 (https://getbootstrap.com/)
-  * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+  * Bootstrap collapse.js v4.3.1-beta.6 (https://jlefebure.com/)
+  * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors) and Jordan Lefébure
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 (function (global, factory) {

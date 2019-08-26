@@ -13,6 +13,7 @@
   border: $card-border-width solid $card-border-color;
   @include border-radius($card-border-radius);
   @include box-shadow($box-shadow);
+  @include transition($transition-base);
 
   > hr {
     margin-right: 0;
@@ -213,6 +214,7 @@
             // stylelint-disable-next-line property-blacklist
             border-top-right-radius: 0;
           }
+
           .card-img-bottom,
           .card-footer {
             // stylelint-disable-next-line property-blacklist
@@ -228,6 +230,7 @@
             // stylelint-disable-next-line property-blacklist
             border-top-left-radius: 0;
           }
+
           .card-img-bottom,
           .card-footer {
             // stylelint-disable-next-line property-blacklist
@@ -268,8 +271,11 @@
 //
 
 .accordion {
+  @include box-shadow($box-shadow);
+
   > .card {
     overflow: hidden;
+    @include box-shadow(none);
 
     &:not(:first-of-type) {
       .card-header:first-child {

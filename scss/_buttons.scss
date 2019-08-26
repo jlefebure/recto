@@ -10,6 +10,8 @@
   font-weight: $btn-font-weight;
   color: $body-color;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: $btn-letter-spacing;
   vertical-align: middle;
   cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
   user-select: none;
@@ -26,7 +28,6 @@
   &:focus,
   &.focus {
     outline: 0;
-    box-shadow: $btn-focus-box-shadow;
   }
 
   // Disabled comes first so active can properly restyle

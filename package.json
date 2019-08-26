@@ -1,7 +1,7 @@
 {
   "name": "recto",
   "description": "Another Bootstrap fork.",
-  "version": "4.3.1-beta.0",
+  "version": "4.3.1-beta.7",
   "version_short": "4.3",
   "keywords": [
     "css",
@@ -23,6 +23,8 @@
     "blc": "blc --exclude-external --filter-level 3 --follow --get --ordered --recursive --host-requests 4 --input http://localhost:3000/",
     "http-server": "http-server --silent -p 3000",
     "bundlesize": "bundlesize",
+    "fonts": "npm-run-all fonts-copy",
+    "fonts-copy": "cross-env-shell shx mkdir -p site/docs/$npm_package_version_short/dist/ && cross-env-shell shx cp -r fonts/ dist/fonts && cross-env-shell",
     "check-broken-links": "npm-run-all --parallel --race \"http-server -- _gh_pages/\" blc",
     "css": "npm-run-all css-compile css-prefix css-minify css-copy",
     "css-copy": "cross-env-shell shx mkdir -p site/docs/$npm_package_version_short/dist/ && cross-env-shell shx cp -r dist/css/ site/docs/$npm_package_version_short/dist/",
@@ -79,7 +81,7 @@
     "release-sri": "node build/generate-sri.js",
     "release-version": "node build/change-version.js",
     "release-zip": "cross-env-shell \"shx rm -rf bootstrap-$npm_package_version-dist && shx cp -r dist/ bootstrap-$npm_package_version-dist && zip -r9 bootstrap-$npm_package_version-dist.zip bootstrap-$npm_package_version-dist && shx rm -rf bootstrap-$npm_package_version-dist\"",
-    "dist": "npm-run-all --parallel css js",
+    "dist": "npm-run-all --parallel css js fonts",
     "test": "npm-run-all lint dist js-test docs-compile docs-lint",
     "netlify": "npm-run-all dist release-sri docs-netlify",
     "watch": "npm-run-all --parallel watch-*",
@@ -154,7 +156,7 @@
     "node": ">=6"
   },
   "files": [
-    "dist/{css,js}/*.{css,js,map}",
+    "dist/{css,js,fonts}/*.{css,js,map,ttf}",
     "js/{src,dist}/**/*.{js,map}",
     "scss/**/*.scss"
   ],

@@ -177,13 +177,13 @@ Note that pre-checked buttons require you to manually add the `.active` class to
 {% capture example %}
 <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-pill btn-secondary active">
-    <input type="radio" name="options" id="option1" checked> Active
+    <input type="radio" name="options" id="optionpill1" checked> Active
   </label>
   <label class="btn btn-pill btn-secondary">
-    <input type="radio" name="options" id="option2"> Radio
+    <input type="radio" name="options" id="optionpill2"> Radio
   </label>
   <label class="btn btn-pill btn-secondary">
-    <input type="radio" name="options" id="option3"> Radio
+    <input type="radio" name="options" id="optionpill3"> Radio
   </label>
 </div>
 {% endcapture %}
