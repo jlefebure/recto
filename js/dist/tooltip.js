@@ -1,5 +1,5 @@
 /*!
-  * Bootstrap tooltip.js v4.3.1-beta.7 (https://jlefebure.com/)
+  * Bootstrap tooltip.js v4.3.1-beta.9 (https://jlefebure.com/)
   * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors) and Jordan Lefébure
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
