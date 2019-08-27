@@ -42,9 +42,11 @@
     font-size: .75rem;
     font-weight: 400;
     letter-spacing: 1.2px;
+    cursor: pointer;
     border: 1px solid transparent;
     &.disabled {
       color: $nav-link-disabled-color;
+      cursor: not-allowed;
       background-color: transparent;
       border-color: transparent;
     }
@@ -53,6 +55,7 @@
   .nav-link.active,
   .nav-item.show .nav-link {
     color: $nav-tabs-link-active-color;
+    cursor: default;
     background-color: $nav-tabs-link-active-bg;
     border-bottom-color: $secondary;
     //border-color: $nav-tabs-link-active-border-color;
