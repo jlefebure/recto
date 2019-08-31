@@ -473,6 +473,38 @@ You can also change the borders on the card header and footer as needed, and eve
 {% endcapture %}
 {% include example.html content=example %}
 
+## Selectable cards
+
+Cards can be designed to be selectable. In that case, you should add a CSS class `.card-selectable` and a color class `.card-*` 
+with the following color. That will define the border color for the hover and the `.card-active` state.
+
+{% capture example %}
+{% for color in site.data.theme-colors %}
+<div class="card card-selectable-{{ color.name }} mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body{% unless color.name == "light" %} text-{{ color.name }}{% endunless %}">
+    <h5 class="card-title">{{ color.name | capitalize }} card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>{% endfor %}
+{% endcapture %}
+{% include example.html content=example %}
+
+A selected card should have a `.card-active` class.
+
+{% capture example %}
+{% for color in site.data.theme-colors %}
+<div class="card card-selectable-{{ color.name }} card-active mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body{% unless color.name == "light" %} text-{{ color.name }}{% endunless %}">
+    <h5 class="card-title">{{ color.name | capitalize }} card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>{% endfor %}
+{% endcapture %}
+{% include example.html content=example %}
+
+
 ## Card layout
 
 In addition to styling the content within cards, Bootstrap includes a few options for laying out series of cards. For the time being, **these layout options are not yet responsive**.

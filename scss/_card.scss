@@ -291,3 +291,22 @@
     }
   }
 }
+
+//Selectable cards
+@each $color, $value in $theme-colors {
+  .card.card-selectable-#{$color} {
+    cursor: pointer;
+
+    &:hover {
+      border: $card-border-width solid darken($value, 7.5%);
+    }
+
+    &.card-active {
+      cursor: default;
+      border: $card-border-width solid $value;
+      @include box-shadow(0 0 64px rgba($value, .2));
+
+    }
+  }
+
+}
