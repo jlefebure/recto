@@ -206,8 +206,8 @@ table {
 }
 
 caption {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.625rem 0.9375rem;
+  padding-bottom: 0.625rem 0.9375rem;
   color: #6d768b;
   text-align: left;
   caption-side: bottom;
@@ -1701,19 +1701,30 @@ pre code {
 .table {
   width: 100%;
   margin-bottom: 1rem;
+  font-size: 0.8125rem;
   color: #6d768b;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.03) 0 3px 8px 0;
+}
+
+.table th {
+  font-weight: 500;
+}
+
+.table tr {
+  border-radius: 0.625rem;
+  border: 1px solid #d9e2ef;
 }
 
 .table th,
 .table td {
-  padding: 0.75rem;
+  padding: 0.625rem 0.9375rem;
   vertical-align: top;
   border-top: 1px solid #d9e2ef;
 }
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #d9e2ef;
 }
 
 .table tbody + tbody {
@@ -1953,8 +1964,8 @@ pre code {
 }
 
 .table .thead-light th {
-  color: #495057;
-  background-color: #e9ecef;
+  color: #586e8d;
+  background-color: #f5f8fa;
   border-color: #d9e2ef;
 }
 

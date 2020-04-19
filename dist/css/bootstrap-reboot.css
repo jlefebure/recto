@@ -176,8 +176,8 @@ table {
 }
 
 caption {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.625rem 0.9375rem;
+  padding-bottom: 0.625rem 0.9375rem;
   color: #6d768b;
   text-align: left;
   caption-side: bottom;

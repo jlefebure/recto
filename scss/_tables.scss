@@ -5,8 +5,20 @@
 .table {
   width: 100%;
   margin-bottom: $spacer;
+  font-size: $table-font-size;
   color: $table-color;
   background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+
+  th {
+    font-weight: $table-head-font-weight;
+  }
+
+  @include box-shadow($table-shadow);
+
+  tr {
+    @include border-radius($table-border-radius);
+    border: $table-border-width solid $table-border-color;
+  }
 
   th,
   td {
@@ -17,7 +29,6 @@
 
   thead th {
     vertical-align: bottom;
-    border-bottom: (2 * $table-border-width) solid $table-border-color;
   }
 
   tbody + tbody {
