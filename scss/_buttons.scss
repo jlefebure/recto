@@ -10,9 +10,9 @@
   font-weight: $btn-font-weight;
   color: $body-color;
   text-align: center;
+  text-decoration: if($link-decoration == none, null, none);
   text-transform: uppercase;
   letter-spacing: $btn-letter-spacing;
-  text-decoration: if($link-decoration == none, null, none);
   white-space: $btn-white-space;
   vertical-align: middle;
   user-select: none;
