@@ -171,8 +171,8 @@ $sizes: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-600 !default;
-
+$body-color:                #51626a !default;
+$letter-spacing:            .1px !default;
 
 // Links
 //
@@ -280,8 +280,9 @@ $embed-responsive-aspect-ratios: join(
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-title:           -apple-system, "Avenir Next", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-folder:                 "../fonts/" !default;
+$font-family-sans-serif:      "Open Sans", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-title:           "Open Sans", "Avenir Next", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
@@ -290,11 +291,11 @@ $font-size-base:              1rem !default; // Assumes the browser default, typ
 $font-size-lg:                $font-size-base * 1.25 !default;
 $font-size-sm:                $font-size-base * .875 !default;
 
-$font-weight-lighter:         lighter !default;
+$font-weight-lighter:         100 !default;
 $font-weight-light:           200 !default;
 $font-weight-normal:          300 !default;
 $font-weight-bold:            700 !default;
-$font-weight-bolder:          bolder !default;
+$font-weight-bolder:          900 !default;
 
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
@@ -308,7 +309,7 @@ $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        $font-family-title !default;
-$headings-font-weight:        400 !default;
+$headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              $gray-900 !default;
 
@@ -325,7 +326,7 @@ $display-line-height:         $headings-line-height !default;
 
 $lead-font-size:              $font-size-base * 1.25 !default;
 $lead-font-weight:            300 !default;
-$lead-color:                  $gray-600 !default;
+$lead-color:                  #51626a !default;
 
 $small-font-size:             80% !default;
 

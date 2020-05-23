@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url($font-folder + "OpenSans-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url($font-folder + "OpenSans-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url($font-folder + "OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url($font-folder + "OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url($font-folder + "OpenSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url($font-folder + "OpenSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url($font-folder + "OpenSans-Bold.ttf") format("truetype");
+}

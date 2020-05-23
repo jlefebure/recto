@@ -31,7 +31,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: "Open Sans", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -54,12 +54,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
-  color: #6d768b;
+  color: #51626a;
   text-align: left;
+  letter-spacing: 0.1px;
   background-color: #fff;
 }
 
@@ -129,7 +130,7 @@ blockquote {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 small {
@@ -358,8 +359,8 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: -apple-system, "Avenir Next", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 400;
+  font-family: "Open Sans", "Avenir Next", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
   line-height: 1.2;
   color: #212529;
 }
@@ -391,7 +392,7 @@ h6, .h6 {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
-  color: #6d768b;
+  color: #51626a;
 }
 
 .display-1 {
@@ -1702,7 +1703,7 @@ pre code {
   width: 100%;
   margin-bottom: 1rem;
   font-size: 0.8125rem;
-  color: #6d768b;
+  color: #51626a;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.03) 0 3px 8px 0;
 }
@@ -1762,7 +1763,7 @@ pre code {
 }
 
 .table-hover tbody tr:hover {
-  color: #6d768b;
+  color: #51626a;
   background-color: rgba(0, 0, 0, 0.075);
 }
 
@@ -2057,7 +2058,7 @@ pre code {
   width: 100%;
   height: calc(1.5em + 1.05rem + 2px);
   padding: 0.525rem 0.85rem;
-  font-family: -apple-system, "Avenir Next", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", "Avenir Next", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.5;
@@ -2164,7 +2165,7 @@ select.form-control:focus::-ms-value {
   margin-bottom: 0;
   font-size: 0.8rem;
   line-height: 1.5;
-  color: #6d768b;
+  color: #51626a;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -2579,9 +2580,9 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
-  font-family: -apple-system, "Avenir Next", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", "Avenir Next", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 300;
-  color: #6d768b;
+  color: #51626a;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.45px;
@@ -2606,7 +2607,7 @@ textarea.form-control {
 }
 
 .btn:hover {
-  color: #6d768b;
+  color: #51626a;
   text-decoration: none;
 }
 
@@ -3333,7 +3334,7 @@ input[type="button"].btn-block {
   min-width: 10rem;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #6d768b;
+  color: #51626a;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -4066,7 +4067,7 @@ input[type="button"].btn-block {
   width: 100%;
   height: calc(1.5em + 1.05rem + 2px);
   padding: 0.525rem 1.85rem 0.525rem 0.85rem;
-  font-family: -apple-system, "Avenir Next", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", "Avenir Next", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.5;
@@ -4171,7 +4172,7 @@ input[type="button"].btn-block {
   z-index: 1;
   height: calc(1.5em + 1.05rem + 2px);
   padding: 0.525rem 0.85rem;
-  font-family: -apple-system, "Avenir Next", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", "Avenir Next", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 300;
   line-height: 1.5;
   color: #495057;
@@ -5860,7 +5861,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group-item-action:active {
-  color: #6d768b;
+  color: #51626a;
   background-color: #e9ecef;
 }
 
@@ -6497,7 +6498,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 300;
   line-height: 1.5;
@@ -6610,7 +6611,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 300;
   line-height: 1.5;
@@ -6763,7 +6764,7 @@ a.close.disabled {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #6d768b;
+  color: #51626a;
 }
 
 .carousel {
@@ -10379,7 +10380,7 @@ button.bg-dark:focus {
 }
 
 .font-weight-lighter {
-  font-weight: lighter !important;
+  font-weight: 100 !important;
 }
 
 .font-weight-normal {
@@ -10391,7 +10392,7 @@ button.bg-dark:focus {
 }
 
 .font-weight-bolder {
-  font-weight: bolder !important;
+  font-weight: 900 !important;
 }
 
 .font-italic {
@@ -10467,7 +10468,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-body {
-  color: #6d768b !important;
+  color: #51626a !important;
 }
 
 .text-muted {
@@ -10587,5 +10588,61 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #d9e2ef;
   }
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/OpenSans-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
 }
 /*# sourceMappingURL=bootstrap.css.map */
